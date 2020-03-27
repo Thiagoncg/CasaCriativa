@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Criativa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <section id="intro">
+            <header>
+                <a href="/">
+                    <img src="/logo.png" alt="logo">
+                </a>
+
+            </header>
+
+            <main>
+                <p>
+                    Ficar em casa em períodos longos, não deve ser nada fácil.
+                </p>
+                <p>
+                    Iremos catalogar ideias, brincadeiras, <strong>, filmes, livros, cursos, dicas</strong> e tudo que
+                    for
+                    necessário para
+                    tornar esse momento mais interessante.
+                </p>
+                <p>
+                    Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
+                </p>
+            </main>
+
+            <section id="buttons">
+                <button onclick="onOff()">+ Adicionar Ideia </button>
+                <!-- <button class="fat">Ver Ideias </button> -->
+                <a href="ideias" class="button"> Ver Ideias</a>
+            </section>
+
+            <footer id="footer">
+                Com ♥️ <a href="http://www.criargames.com.br" target="_blank">StudiosCriar</a>
+            </footer>
+
+        </section>
+
+        <section id="last_ideias">
+
+            {% include "all_ideas.html" %}
+            
+        </section>
+    </div>
+
+    <!--Modal-->
+    {% include "modal.html" %}
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body id="page-ideas">
+    <div id="container">
+        <header>
+            <a href="/">
+                <img src="/logo.png" alt="logo">
+            </a>
+
+            <nav>
+                <li><a href="/"> Início</a></li>
+                <li><a href="#">Nova Ideia</a></li>
+            </nav>
+        </header>
+
+        <section id="title">
+            <p>Em exibição</p>
+            <h1>ideias</h1>
+        </section>
+
+        <main>
+            <section id="ideas">
+                {% include "all_ideas.html" %}
+            </section>
+    </div>
+
+
+    </main>
+
+    <footer>
+        Com ♥️ <a href="http://www.criargames.com.br" target="_blank">StudiosCriar</a>
+    </footer>
+    </div>
+
+    <!--Modal-->
+    {% include "modal.html" %}
+
+
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
