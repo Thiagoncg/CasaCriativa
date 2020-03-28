@@ -4,51 +4,6 @@ const server = express();
 
 const db = require("./db");
 
-// const ideas = [
-//     {
-//         img:"https://image.flaticon.com/icons/svg/2728/2728994.svg",
-//         title:"Cuidar de Bebes",
-//         category:"Paternidade",
-//         description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis sapiente",
-//         url:"https://www.criargames.com.br"
-//     },
-//     {
-//         img:"https://image.flaticon.com/icons/svg/2729/2729017.svg",
-//         title:"Meio Ambiente",
-//         category:"Arvores",
-//         description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis sapiente",
-//         url:"https://www.criargames.com.br"
-//     },
-//     {
-//         img:"https://image.flaticon.com/icons/svg/2728/2728994.svg",
-//         title:"Cuidar de Bebes",
-//         category:"Paternidade",
-//         description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis sapiente",
-//         url:"https://www.criargames.com.br"
-//     },
-//     {
-//         img:"https://image.flaticon.com/icons/svg/2728/2728994.svg",
-//         title:"Cuidar de Bebes",
-//         category:"Paternidade",
-//         description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis sapiente",
-//         url:"https://www.criargames.com.br"
-//     },
-//     {
-//         img:"https://image.flaticon.com/icons/svg/2728/2728994.svg",
-//         title:"Cuidar de Bebes",
-//         category:"Paternidade",
-//         description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis sapiente",
-//         url:"https://www.criargames.com.br"
-//     },
-//     {
-//         img:"https://image.flaticon.com/icons/svg/2728/2728994.svg",
-//         title:"Cuidar de Bebes",
-//         category:"Paternidade",
-//         description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis sapiente",
-//         url:"https://www.criargames.com.br"
-//     },
-// ]
-
 //configurar arquivos estaticos
 server.use(express.static("public"));
 
@@ -89,7 +44,6 @@ server.get("/", function(req, res){
 
     
 });
-
 
 //rota
 server.get("/ideias", function(req, res){
